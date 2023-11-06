@@ -1,0 +1,22 @@
+/*Introduction to Windows API*/
+
+/*All actions that user does, can be done via the Windows API. For example, display something on the screen.*/
+/*"P" represent pointers to the actual data type while the ones that don't start with "P" represent the actual data type itself.*/
+
+// the 'INVALID_HANDLE_VALUE' is just to intialize the variable
+
+#include <windows.h>
+#include <stdio.h>
+int main() {
+    HANDLE hFile = INVALID_HANDLE_VALUE;
+
+    LPCWSTR filePath = L"FILE_PATH";
+
+    hFile = CreateFileW(filePath, GENERIC_ALL, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+
+    if (hFile == INVALID_HANDLE_VALUE) {
+        printf("[-] CreateFileW Api Function Failed With Error : %d\n", GetLastError());
+        return -1;
+    }
+    return 0;
+}
