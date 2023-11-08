@@ -1,0 +1,19 @@
+/*
+11.Windows Process
+
+
+Process Environment Block (PEB)
+PEB is a data structure in WIndows that contains information about a process such as its parameters, startup information, allocated heap information, and loaded DLLs, in addition to others.
+PEB also stores information about the process such as the process ID (PID) and the path to the executable.
+Every process created has its own PEB data structure, that will contain its own set of information about it.
+
+*/
+
+/*
+Being Debugged
+
+Being Debugged is a flag in the PEB structure that indicates whether the process is being debugged or not.
+It is set to 1 (TRUE) when the process is being debugged and 0 (FALSE) when it is not.
+It is used by the Windows loader to determin whether to launch the application with a debugger attached or not.
+
+*/
