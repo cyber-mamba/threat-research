@@ -1,0 +1,32 @@
+/*
+13 Payload Placement - .data & .rdata Sections
+
+As a malware developer, one will have several options as to where the payload can be stored within the PE file.
+Payloads can be stored in one of the floowing PE sections.
+
+	.data
+	.rdata
+	.text
+	.rsrc
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
