@@ -15,7 +15,8 @@ If the payload is a global or local variable, it will be stored in the .datasect
 
 The code snippet below shows an example of having a payload stored in the .data section.
 
-
+If program data is in to .data section, it is maybe initialized global variable or static variable.
+If data is in to .rdata, it is maybe const variable. We can't write or execute. It is just redable.
 
 
 
