@@ -9,7 +9,11 @@ Payloads can be stored in one of the floowing PE sections.
 	.text
 	.rsrc
 
+The .data section of a PE file is a section of a program&s executable file that contains initialized global and static variables.
+This section is readable and writable, ir suitable for an encrypted payload that requires decryption during runtime.
+If the payload is a global or local variable, it will be stored in the .datasection.
 
+The code snippet below shows an example of having a payload stored in the .data section.
 
 
 
