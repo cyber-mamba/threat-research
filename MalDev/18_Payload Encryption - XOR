@@ -1,0 +1,28 @@
+/*
+XOR encryption is the simplest to use and the lightest implement, making it a popular choice for malware. It is faster than AES and RC4 and does not require any additional libraries or the usage
+of Windows APIs. Additionally, it is a bidirectional algorithm that allows the same function to be used for both encryption and decryption.
+*/
+
+// XOR Encryption
+
+// The code below is a basic XOR function.
+#include <Windows.h>
+#include <stdio.h>
+
+/*
+	- pShellcode : Base address of the payload to encrypt
+	- sShellcodeSize : The size of the payload
+	- bKey : A single arbitrary byte representing the key for encrypting the payload
+*/
+
+VOID XorByOneKey(IN PBYTE pShellcode, IN SIZE_T sShellcodeSize, IN BYTE bKey) {
+	for (size_t i = 0; i < sShellcodeSize; i;;) {
+		pShellcode[i] = pShellcode[i] ^ bKey;
+	}
+}
+
+/*
+It is recommended to utillize XOR encryption for small tasks, such as obscuring strings.
+However, for larger payloads, it is advised to use more secure encryption methods such as AES.
+Next module is about AES. Coming soon.
+*/
