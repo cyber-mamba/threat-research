@@ -1,0 +1,14 @@
+/*
+Saving the paylod in the .rsrc section is a cleaner method for authors, since larger payloads can't be stored in the .data or .rdata sections due to 
+size limits.
+*/
+
+// What is the .rsrc Section?
+/*
+- Can't access to the .rsrc sectinon. Need to access via WINAPI.
+  -FindResourceW
+  -LoadResource
+  -LockResource
+  -SizeofResource
+*/
+
