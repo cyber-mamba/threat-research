@@ -14,5 +14,21 @@ In this module provides 2 code  samples that user AES256-CBC. The first sample i
 through the bCrypt library which utilizes WinAPIs and the second sample uses Tiny Aes Project.
 
 Note that since the AES256-CBC is being used, the code uses a 32-byte key and a 16-byte IV.
+*/
+
+// Cryptographic Next Generation (CNG)
+/*
+This provides a set of cryptographic functions that can be used by applications of the OS.
+To load CNC, need to include <bcrypt.h> 
+One of the primary drawbacks of using the method outlined above to implement AES encryption is that the usage of the cryptographic WinAPIs
+results in them being visible in the binary's Import Address Table(IAT).
+
+Can see this IAT with dumpbin.exe.
+
+However, Tiny-AES is usefull to easy encryption and decryption. And if you use this module, functions are not seen in IAT.
+Because Tiny-AES isn't WinAPIs.
+
+Sometime security solution detects what used in IAT, such as CryptDecryption, bCrypt.h.
 
 */
+
