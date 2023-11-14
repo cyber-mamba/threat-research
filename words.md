@@ -1,2 +1,4 @@
 - heap buffer
+- Initial Vector (IV)
+- Import Address Table (IAT)
 - 
