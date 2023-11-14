@@ -1,0 +1,18 @@
+// 19_Payload Encryption - AES Encryption
+
+/*
+Advanced Encryption Standard(AES) is more secure encryption algorithm.
+It is a symmetric-key algorithm, meaning the same key is used for both encryption and decryption.
+
+Regardledss of the chosen AES type, AES always requires a 128-bit input and produces a 128-bit 
+output blocks. The important thing to keep in mind is that the input data should be multiples 
+of 16 bytes(128 bits).
+If the payload being encrypted is not a multiple of 16 bytes then padding is required to increase the
+size of the payload and make it a multiple of 16 bytes.
+
+In this module provides 2 code  samples that user AES256-CBC. The first sample is achieved
+through the bCrypt library which utilizes WinAPIs and the second sample uses Tiny Aes Project.
+
+Note that since the AES256-CBC is being used, the code uses a 32-byte key and a 16-byte IV.
+
+*/
