@@ -1,4 +1,9 @@
-- heap buffer
+- heap -> In the memory. Heap is for storing data dinamicaly and data that stored in heap is remain until the program terminated.
 - Initial Vector (IV)
 - Import Address Table (IAT)
 - sprintf()
+- Thread
+- Structure in C language
+- shell code
+- memory buffer
+- stack -> In the memory. Stack is for storing data temporary.
