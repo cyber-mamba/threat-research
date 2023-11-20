@@ -7,3 +7,5 @@
 - shell code
 - memory buffer
 - stack -> In the memory. Stack is for storing data temporary.
+- fetch
+- hundle
